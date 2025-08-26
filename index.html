@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Aditya Das — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body id="top">
 
   <!-- NAVBAR -->
   <header class="nav">
@@ -26,8 +27,49 @@
     </div>
   </header>
 
-  <!-- Temp anchors so links work while we build sections -->
-  <main class="container" id="top" style="padding:80px 0 120vh">
+  <!-- HERO (now uses .container so left edge aligns with brand) -->
+  <section class="hero container">
+    <div class="hero-col">
+      <p class="kicker">Cloud Security Engineer</p>
+      <h1 class="title">
+        Hello I'm<br>
+        <span class="neon">Aditya</span><br>
+        <span class="neon">Das</span>
+      </h1>
+
+      <p class="subtitle">
+        NJIT cybersecurity student (BS, May 2026) · Cloud Security Intern at NJDOL ·
+        Former IT Security Intern at OptionMetrics · 4+ years of IT & infrastructure experience.
+        I automate guardrails on AWS (IAM, Config, Security Hub) with Python & Terraform.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn" href="Aditya_Das_CV.pdf" download>DOWNLOAD CV ⬇</a>
+        <div class="socials">
+          <a class="icon" href="https://www.linkedin.com/in/adityadas" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <a class="icon" href="https://github.com/sadaytida24" target="_blank" rel="noopener" aria-label="GitHub">gh</a>
+        </div>
+      </div>
+
+      <!-- Stats = one clean row -->
+      <div class="stats">
+        <div class="stat"><span class="num">20</span><span>Age</span></div>
+        <div class="stat"><span class="num">4+</span><span>Years of experience</span></div>
+        <div class="stat"><span class="num">20</span><span>Projects worked on</span></div>
+        <div class="stat"><span class="num">5</span><span>Projects Deployed</span></div>
+      </div>
+    </div>
+
+    <div class="portrait-wrap">
+      <div class="ring" aria-hidden></div>
+      <div class="portrait">
+        <img src="portrait.jpg" alt="Portrait of Aditya Das" />
+      </div>
+    </div>
+  </section>
+
+  <!-- DUMMY SECTION TARGETS (replace later) -->
+  <main class="container">
     <section id="professional" style="height:60vh"></section>
     <section id="projects" style="height:60vh"></section>
     <section id="certifications" style="height:60vh"></section>
