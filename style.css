@@ -1468,3 +1468,32 @@ textarea.form-input {
 
     .timeline-text { max-width: 700px; }
 }
+
+/* === Custom tweaks for Aditya === */
+.info-content .title{
+  white-space: normal;
+  line-height: 1.3;
+}
+
+.avatar-box img{
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about .article-title{ margin-top: 15px; }
+
+/* Make navbar sticky on large screens side */
+@media (min-width: 1024px){
+  .navbar{ top: 10px; }
+}
+
+/* Project category labels tighter */
+.project-category{
+  opacity: .85;
+}
+
+/* Better focus styles for accessibility */
+:focus-visible{
+  outline: 2px dashed var(--orange-yellow-crayola);
+  outline-offset: 3px;
+}
