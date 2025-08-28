@@ -1051,6 +1051,12 @@ textarea.form-input {
             .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 
+
+/* Make long contact links like email wrap instead of overflowing */
+.contact-info .contact-link {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
 /*MEDIA QUERIES*/
 
 @media (min-width: 450px) {
